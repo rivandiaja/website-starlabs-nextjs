@@ -29,7 +29,7 @@ export default function Home() {
   </div>
   <div>
     <Image
-      src="/img/robot.png"
+      src="/robot.png"
       alt="gambar"
       width={900}
       height={900}
