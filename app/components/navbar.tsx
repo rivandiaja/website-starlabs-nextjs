@@ -9,7 +9,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gradient-to-r from-[#0f192c] to-[#201063] shadow-lg shadow-cyan-300/30 p-2 pr-4 pl-4">
+    <nav className="z-50 fixed top-0 left-0 w-full bg-gradient-to-r from-[#0f192c] to-[#201063] shadow-lg shadow-cyan-300/30 p-2 pr-4 pl-4">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="text-white text-lg font-bold">

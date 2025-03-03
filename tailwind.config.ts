@@ -12,6 +12,15 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: {
+        pulseGlow: "pulseGlow 2s infinite alternate",
+      },
+      keyframes: {
+        pulseGlow: {
+          "0%": { opacity: "0.3" },
+          "100%": { opacity: "0.7" },
+        },
+      },
     },
   },
   plugins: [],
