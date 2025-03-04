@@ -28,17 +28,17 @@ export default function Home() {
           </p>
 
 
-            </div>
-            <div>
-              <Image
-                src="/robot.png"
-                alt="gambar"
-                width={900}
-                height={900}
-                layout="intrinsic"
-              />
-            </div>
-          </div>
+  </div>
+  <div>
+    <Image
+      src="/img/robot.png"
+      alt="gambar"
+      width={900}
+      height={900}
+      layout="intrinsic"
+    />
+  </div>
+</div>
 
     
           <div className="flex justify-center items-center gap-5 sm:gap-10 xs:gap-5 mt-[-20px] w-full py-2 overflow-hidden relative">
