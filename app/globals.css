@@ -25,3 +25,12 @@ body {
 /* Override warna teks default untuk semua elemen */
 html, body, h1, h2, h3, h4, h5, h6, p, span, div, a {
   color: var(--foreground);}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

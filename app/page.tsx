@@ -4,6 +4,7 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import ScrollAnimation from "@/app/components/ScrollAnimation";
+import BenefitList from '@/app/components/BenefitList';
 
 
 export default function Home() {
@@ -18,12 +19,12 @@ export default function Home() {
           <p className="text-lg sm:text-xl md:text-2xl">
             <TypeAnimation
               sequence={[
+                "", 1000,
                 "Where Innovation Meets Technology—Explore, Learn, and Create in the World of", 1000,
                 "Where Innovation Meets Technology—Explore, Learn, and Create in the World of Science Technology and Computer Laboratories!", 1000,
-
               ]}
               speed={50}
-              repeat={Infinity} // <-- Tambahin ini supaya teksnya berulang terus!
+              repeat={Infinity}
             />
           </p>
 
@@ -31,7 +32,7 @@ export default function Home() {
   </div>
   <div>
     <Image
-      src="/img/robot.png"
+      src="/robot.png"
       alt="gambar"
       width={900}
       height={900}
@@ -81,6 +82,7 @@ export default function Home() {
             </div>
           </div></ScrollAnimation>
           <div className="absolute w-[400px] h-[400px] bg-[url('/putih.png')] bg-cover -ml-60 md:w-[800px] md:h-[800px] animate-pulseGlow"></div>
+          <BenefitList />
        </>
       );
     }
