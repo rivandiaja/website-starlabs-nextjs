@@ -10,6 +10,7 @@
 .animate__animated.animate__bounce {
   --animate-duration: 2s;
 }
+
 .dark {
   --background: #ffffff;
   --foreground: #030e24;
@@ -23,7 +24,7 @@ body {
 }
 
 /* Override warna teks default untuk semua elemen */
-html, body, h1, h2, h3, h4, h5, h6, p, span, div, a {
+html, body, h1, h2, h3, h4, h5, h6, p, span, div, a, line {
   color: var(--foreground);}
 
 .hide-scrollbar::-webkit-scrollbar {
@@ -33,4 +34,19 @@ html, body, h1, h2, h3, h4, h5, h6, p, span, div, a {
 .hide-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.clip-chat-left {
+  -webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%);
+          clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+
+.clip-chat-right {
+  -webkit-clip-path: polygon(0 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+@layer utilities {
+  .overflow-anchor-none {
+    overflow-anchor: none;
+  }
 }

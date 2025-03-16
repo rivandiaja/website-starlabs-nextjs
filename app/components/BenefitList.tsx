@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, JSX } from 'react';
 
-const BenefitList = () => {
+const BenefitList = (): JSX.Element => {
   const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
@@ -66,53 +66,53 @@ const BenefitList = () => {
             {index === 0 && (
               <>
                 <h2 className="text-xl font-bold mb-3">1. Pengembangan Skill Teknis</h2>
-                <p className="mb-2">Kamu bisa belajar dan mengasah keterampilan di bidang pemrograman, robotika, AI, IoT, dan teknologi lainnya.</p>
-                <p>Ada kesempatan untuk mengerjakan proyek-proyek nyata yang menantang dan relevan dengan industri.</p>
+                <p className="text-white mb-2">Kamu bisa belajar dan mengasah keterampilan di bidang pemrograman, robotika, AI, IoT, dan teknologi lainnya.</p>
+                <p className='text-white'>Ada kesempatan untuk mengerjakan proyek-proyek nyata yang menantang dan relevan dengan industri.</p>
               </>
             )}
             {index === 1 && (
               <>
-                <h2 className="text-xl font-bold mb-3">2. Networking</h2>
-                <p className="mb-2">Kamu akan bertemu dengan mahasiswa lain yang memiliki minat serupa, sehingga bisa membangun jaringan (network) yang bermanfaat untuk masa depan.</p>
-                <p>Terkadang, UKM Starlabs juga mengundang praktisi atau alumni yang sudah sukses di bidang teknologi untuk berbagi pengalaman.</p>
+                <h2 className="text-white text-xl font-bold mb-3">2. Networking</h2>
+                <p className="text-white mb-2">Kamu akan bertemu dengan mahasiswa lain yang memiliki minat serupa, sehingga bisa membangun jaringan (network) yang bermanfaat untuk masa depan.</p>
+                <p className='text-white'>Terkadang, UKM Starlabs juga mengundang praktisi atau alumni yang sudah sukses di bidang teknologi untuk berbagi pengalaman.</p>
               </>
             )}
             {index === 2 && (
               <>
-                <h2 className="text-xl font-bold mb-3">3. Pengalaman Organisasi</h2>
-                <p className="mb-2">Kamu bisa belajar manajemen proyek, kerja tim, dan kepemimpinan melalui kegiatan-kegiatan yang diadakan oleh Starlabs.</p>
-                <p>Ini bisa menjadi nilai tambah untuk CV atau portofolio kamu.</p>
+                <h2 className="text-white text-xl font-bold mb-3">3. Pengalaman Organisasi</h2>
+                <p className="text-white mb-2">Kamu bisa belajar manajemen proyek, kerja tim, dan kepemimpinan melalui kegiatan-kegiatan yang diadakan oleh Starlabs.</p>
+                <p className='text-white '>Ini bisa menjadi nilai tambah untuk CV atau portofolio kamu.</p>
               </>
             )}
             {index === 3 && (
               <>
-                <h2 className="text-xl font-bold mb-3">4. Mengikuti Kompetisi</h2>
-                <p>Starlabs sering mengadakan atau mengikuti kompetisi teknologi, baik tingkat nasional maupun internasional. Ini adalah kesempatan bagus untuk menguji kemampuan dan menambah pengalaman.</p>
+                <h2 className="text-white text-xl font-bold mb-3">4. Mengikuti Kompetisi</h2>
+                <p className='text-white'>Starlabs sering mengadakan atau mengikuti kompetisi teknologi, baik tingkat nasional maupun internasional. Ini adalah kesempatan bagus untuk menguji kemampuan dan menambah pengalaman.</p>
               </>
             )}
             {index === 4 && (
               <>
-                <h2 className="text-xl font-bold mb-3">5. Akses ke Sumber Daya dan Fasilitas</h2>
-                <p>Sebagai anggota, kamu mungkin mendapatkan akses ke tools, software, atau fasilitas lab yang mendukung pembelajaran dan proyek-proyekmu.</p>
+                <h2 className="text-white text-xl font-bold mb-3">5. Akses ke Sumber Daya dan Fasilitas</h2>
+                <p className='text-white'>Sebagai anggota, kamu mungkin mendapatkan akses ke tools, software, atau fasilitas lab yang mendukung pembelajaran dan proyek-proyekmu.</p>
               </>
             )}
             {index === 5 && (
               <>
-                <h2 className="text-xl font-bold mb-3">6. Peluang Karir</h2>
-                <p className="mb-2">Dengan skill dan pengalaman yang didapat, kamu akan lebih siap untuk memasuki dunia kerja, terutama di bidang teknologi.</p>
-                <p>Beberapa anggota Starlabs mungkin juga mendapatkan rekomendasi untuk magang atau pekerjaan dari jaringan yang dibangun.</p>
+                <h2 className="text-white text-xl font-bold mb-3">6. Peluang Karir</h2>
+                <p className=" text-white mb-2">Dengan skill dan pengalaman yang didapat, kamu akan lebih siap untuk memasuki dunia kerja, terutama di bidang teknologi.</p>
+                <p className='text-white'>Beberapa anggota Starlabs mungkin juga mendapatkan rekomendasi untuk magang atau pekerjaan dari jaringan yang dibangun.</p>
               </>
             )}
             {index === 6 && (
               <>
-                <h2 className="text-xl font-bold mb-3">7. Komunitas yang Supportif</h2>
-                <p>Kamu akan menjadi bagian dari komunitas yang saling mendukung dan berbagi pengetahuan. Ini bisa memotivasi kamu untuk terus berkembang.</p>
+                <h2 className="text-white text-xl font-bold mb-3">7. Komunitas yang Supportif</h2>
+                <p className='text-white'>Kamu akan menjadi bagian dari komunitas yang saling mendukung dan berbagi pengetahuan. Ini bisa memotivasi kamu untuk terus berkembang.</p>
               </>
             )}
             {index === 7 && (
               <>
-                <h2 className="text-xl font-bold mb-3">8. Eksplorasi Minat dan Bakat</h2>
-                <p>Starlabs memberikan ruang untuk mencoba hal-hal baru, seperti mengembangkan aplikasi, membuat robot, atau mengeksplorasi AI. Ini bisa membantu kamu menemukan passion di bidang teknologi.</p>
+                <h2 className="text-white text-xl font-bold mb-3">8. Eksplorasi Minat dan Bakat</h2>
+                <p className='text-white'>Starlabs memberikan ruang untuk mencoba hal-hal baru, seperti mengembangkan aplikasi, membuat robot, atau mengeksplorasi AI. Ini bisa membantu kamu menemukan passion di bidang teknologi.</p>
               </>
             )}
           </div>
