@@ -5,6 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import ScrollAnimation from "@/app/components/ScrollAnimation";
 import BenefitList from "@/app/components/BenefitList";
+import Footer from "@/app/components/footer";
 
 
 export default function Home() {
@@ -211,12 +212,38 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="text-white text-xl font-bold flex flex-col items-center justify-center text-center">
-  <h1>What You Waiting For?</h1>
-  <button className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+
+<div className="text-white text-xl font-bold flex flex-col items-center justify-center text-center mt-10">
+  <h1 className="text-3xl mb-6">What You Waiting For?</h1>
+  <button className="mb-12 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
     Join Now
   </button>
+
+  {/* Our Newest Action */}
+  <div className="w-full max-w-5xl">
+    <h2 className="text-2xl mb-6 text-center">Our Newest Action</h2>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      {/* Kegiatan 1 */}
+      <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
+      <Image src="/robot.png" alt="Event 1" width={300} height={200} className="w-full h-40 object-cover rounded-md" />
+      <h3 className="mt-3 text-lg">Workshop UI/UX</h3>
+      </div>
+
+      {/* Kegiatan 2 */}
+      <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
+      <Image src="/robot.png" alt="Event 1" width={300} height={200} className="w-full h-40 object-cover rounded-md" />
+      <h3 className="mt-3 text-lg">Coding Bootcamp</h3>
+      </div>
+
+      {/* Kegiatan 3 */}
+      <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
+      <Image src="/robot.png" alt="Event 1" width={300} height={200} className="w-full h-40 object-cover rounded-md" />
+      <h3 className="mt-3 text-lg">Tech Meetup</h3>
+      </div>
+    </div>
+  </div>
 </div>
+<Footer />
     </>
   );
 }
